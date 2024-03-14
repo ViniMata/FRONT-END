@@ -1,0 +1,19 @@
+button{
+    background-color: rgb(200,0,0);
+    color: white;
+    border: none;
+    height: 35px ;
+    border-radius: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.BUTOM1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0,200);
+    border: 2px solid rgb(0,0,200);
+  border-radius: 5px;
+  padding: 5px;
+
+}
