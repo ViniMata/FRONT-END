@@ -11,27 +11,64 @@
     <form>
         <div>
             <label for="txtNome">Nome: </label>
-            <input type="text" placeholder="Seu Nome" id="txtNome">
+            <input type="text" placeholder="Seu Nome" id="txtNome" name="txtNome">
         </div>
         <div>
             <label for="txtEmail">E-Mail: </label>
-            <input type="email" placeholder="Seu Email " id="txtEmail">
+            <input type="email" placeholder="Seu Email " id="txtEmail" name="txtEmail">
         </div>
         <div>
             <label for="txtSenha">Senha: </label>
-            <input type="password" placeholder="Sua Senha " id="txtSenha">
+            <input type="password" placeholder="Sua Senha " id="txtSenha" name="txtSenha">
         </div>
         <div>
             <label for="txtNascimento">Data de Nascimento: </label>
-            <input type="date" placeholder="Quando você nasceu? " id="txtNascimento">
+            <input type="date" placeholder="Quando você nasceu? " id="txtNascimento" name="txtNascimento">
         </div>
         <div>
             <label for="Selecione seu estado"></label>
             <select id="selectEstado">
                 <option value="sp">Sâo Paulo</option>
                 <option value="rj">Rio de Janeiro</option>
+            </select>
         </div>
 
+        <div>
+            <p>Escolha sua linguagem de programação:</p>
+            <div>
+                <input type="radio" name="favlinguagens" id="python" value="python">
+                <label for="python">Python</label>
+            </div>    
+            
+            
+            <div>  
+                <input type="radio" name="favlinguagens" id="java" value="java">
+                <label for="java">Java</label>
+            </div>
+        </div>
+        
+        <div>
+            <p>Selecione os itens comprados</p>
+
+            <div>
+                <input type="checkbox" id="refrigerante" name="refrigerante">
+            <label for="refrigerante">Refrigerante</label>
+            </div>
+            <div>
+                <input type="checkbox" id="salgadinho" name="salgadinho">
+            <label for="salgadinho">Salgadinho</label>
+            </div>
+    
+        </div>
+
+
+        <div>
+            <label for="txtArea">Fala aipramimda sua vida:</label><br>
+            <textarea name="txtArea" id="txtArea" cols="50" rows="8"></textarea>
+        </div>
+        
+        
+        
         <input type="submit" value="Finalizar">
     </form>
 
