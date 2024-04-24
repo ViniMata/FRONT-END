@@ -86,18 +86,17 @@ nav ul a{
     letter-spacing: 2px;
 }
 
-.banner-header h1{
-    margin: 10px 0;
-
+.banner-header h1 {
+    margin-top: 20px;
+    font-size: 2rem;
 }
 .banner-header p{
-    margin-top: 25px ;
-    margin-bottom: 50px;
+    margin: 20px 0 60px 0;
+    font-weight: 300;
+    line-height: 1.8rem;
+    font-size: 1rem;
 }
-.banner-header a btn{
-    margin: 25px 0;
+.banner-header .mini-message {
+    font-size: 0.85rem;
 }
 
-.banner-header mini-message{
-    font-size: 0.6rem;
-}
