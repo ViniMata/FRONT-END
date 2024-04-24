@@ -76,7 +76,6 @@ nav ul a{
 }
 .banner-header .direita{
     width: 55%;
-    background-color: aquamarine;
 
 }
 .banner-header h2{
@@ -99,4 +98,26 @@ nav ul a{
 .banner-header .mini-message {
     font-size: 0.85rem;
 }
+
+.dashboard{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.group-blocks {
+    width: 45%;
+    max-width: 270px;
+    min-width: 250px;
+    border: 1px solid red;
+}
+ .block{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(233,122,433, 0.5);
+    height: 300px;
+    margin-bottom: 10px ;
+ }
 
