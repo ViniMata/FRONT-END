@@ -103,7 +103,7 @@ nav ul a{
     display: flex;
     gap: 10px;
     justify-content: flex-end;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .group-blocks {
