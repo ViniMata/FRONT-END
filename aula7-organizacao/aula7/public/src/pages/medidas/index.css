@@ -1,0 +1,9 @@
+div{
+    background-color: #babafd;
+}
+.medida-pixel{
+    width: 1200px;
+}
+.medida-porcentagem{
+    width: 50%;
+}
