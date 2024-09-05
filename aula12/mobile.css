@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+    h1, p{
+        color: peru;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    h1, p{
+        color: purple;
+    }
+}

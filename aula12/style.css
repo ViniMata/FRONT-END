@@ -1,0 +1,40 @@
+@import url(mobile.css);
+
+body{
+    background-color: red;
+}
+
+
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    /* width: 800px; */
+    max-width: 660px;
+    min-width: 280px;
+    margin: 0 auto;
+
+}
+
+img{
+    width: 100%;
+}
+
+h1, p{
+    color: greenyellow;
+}
+@media screen and (max-width: 1024px) {
+    h1, p{
+        color: peru;
+    }
+    .subtitulo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    h1, p{
+        color: purple;
+    }
+}
