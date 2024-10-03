@@ -15,8 +15,8 @@ form.addEventListener("submit", (event) => {
     let messageText = inputMessage.value; // texto digirado pelo usuario
 
     let newMessageGemini = {
-        "role" : "user",
-        "parts" : [{"text": messageText}],
+        "role": "user",
+        "parts": [{ "text": messageText }],
 
     };
 
@@ -29,14 +29,14 @@ form.addEventListener("submit", (event) => {
     let messageElement = document.createElement("div")
     messageElement.classList.add("message");
     messageElement.classList.add("message--sent");
-    messageElement.innerHTML =`
+    messageElement.innerHTML = `
     <div class="message__text">${messageText}</div>
     `;
     chatlog.appendChild(messageElement);
-    
+
     //REQUISIÇÃO PARA A MINHA API LOCAL!!!!
-    fetch("http://localhost:3000/sendMessage", {
-        mathod: "POST",
+    fetch("http://localhost:3001/sendMessage", {
+        method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
@@ -45,5 +45,16 @@ form.addEventListener("submit", (event) => {
         })
     })
 
-        .then(res => res.json());
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.chat_completion);
+
+            let messageElement = document.createElement("div")
+            messageElement.classList.add("message");
+            messageElement.classList.add("message--assistant");
+            messageElement.innerHTML = `
+            <div class="message__text">${data.chat_completion}</div>
+            `;
+            chatlog.appendChild(messageElement);
+        })
 });
